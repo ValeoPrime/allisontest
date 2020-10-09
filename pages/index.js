@@ -1,20 +1,21 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Header from '../components/header/Header'
+import styles from '../styles/Home.module.sass'
 
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        
-      </main>
-
-      
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <Header/>
+        </div>
+      </main> 
     </div>
   )
 }
